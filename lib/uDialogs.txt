@@ -1,0 +1,49 @@
+unit uDialogBlogMain;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
+  FMX.Memo, FMX.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    btnYesNo: TButton;
+    Memo1: TMemo;
+    procedure btnYesNoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses
+  uDialogs;
+
+{$R *.fmx}
+
+procedure DoAfterMessageDlg(const MR: TModalResult);
+begin
+  case MR of
+    mrYes : Form1.Memo1.Lines.Add('選擇:是');
+    mrNo : Form1.Memo1.Lines.Add('選擇:否');
+  end;
+end;
+
+procedure TForm1.btnYesNoClick(Sender: TObject);
+begin
+  Memo1.Lines.Clear;
+
+  Memo1.Lines.Add('btnYesNoClick Start');
+  uDialogs.msg_YesNo(self, '要反服貿嗎?', DoAfterMessageDlg);
+
+  Memo1.Lines.Add('btnYesNoClick End');
+end;
+
+end.

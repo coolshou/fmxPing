@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{44569B5F-A38F-45F4-816F-29529D021312}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="fmPing.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\Users\Public\Documents\Embarcadero\Studio\14.0\Samples\Object Pascal\FireMonkey Desktop\CustomTreeView\CustomTree.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="D:\delphiLib\CiaXml\Package\CiaXmlXE6Design.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="D:\delphiLib\CiaXml\Package\CiaXmlXE6Run.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="fmxPing.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\test\popupmenu\popupmenu.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="fmPing">
+        <MSBuild Projects="fmPing.dproj"/>
+    </Target>
+    <Target Name="fmPing:Clean">
+        <MSBuild Projects="fmPing.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="fmPing:Make">
+        <MSBuild Projects="fmPing.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomTree">
+        <MSBuild Projects="C:\Users\Public\Documents\Embarcadero\Studio\14.0\Samples\Object Pascal\FireMonkey Desktop\CustomTreeView\CustomTree.dproj"/>
+    </Target>
+    <Target Name="CustomTree:Clean">
+        <MSBuild Projects="C:\Users\Public\Documents\Embarcadero\Studio\14.0\Samples\Object Pascal\FireMonkey Desktop\CustomTreeView\CustomTree.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomTree:Make">
+        <MSBuild Projects="C:\Users\Public\Documents\Embarcadero\Studio\14.0\Samples\Object Pascal\FireMonkey Desktop\CustomTreeView\CustomTree.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CiaXmlXE6Design">
+        <MSBuild Projects="D:\delphiLib\CiaXml\Package\CiaXmlXE6Design.dproj"/>
+    </Target>
+    <Target Name="CiaXmlXE6Design:Clean">
+        <MSBuild Projects="D:\delphiLib\CiaXml\Package\CiaXmlXE6Design.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CiaXmlXE6Design:Make">
+        <MSBuild Projects="D:\delphiLib\CiaXml\Package\CiaXmlXE6Design.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CiaXmlXE6Run">
+        <MSBuild Projects="D:\delphiLib\CiaXml\Package\CiaXmlXE6Run.dproj"/>
+    </Target>
+    <Target Name="CiaXmlXE6Run:Clean">
+        <MSBuild Projects="D:\delphiLib\CiaXml\Package\CiaXmlXE6Run.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CiaXmlXE6Run:Make">
+        <MSBuild Projects="D:\delphiLib\CiaXml\Package\CiaXmlXE6Run.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="fmxPing">
+        <MSBuild Projects="fmxPing.dproj"/>
+    </Target>
+    <Target Name="fmxPing:Clean">
+        <MSBuild Projects="fmxPing.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="fmxPing:Make">
+        <MSBuild Projects="fmxPing.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="popupmenu">
+        <MSBuild Projects="..\test\popupmenu\popupmenu.dproj"/>
+    </Target>
+    <Target Name="popupmenu:Clean">
+        <MSBuild Projects="..\test\popupmenu\popupmenu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="popupmenu:Make">
+        <MSBuild Projects="..\test\popupmenu\popupmenu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="fmPing;CustomTree;CiaXmlXE6Design;CiaXmlXE6Run;fmxPing;popupmenu"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="fmPing:Clean;CustomTree:Clean;CiaXmlXE6Design:Clean;CiaXmlXE6Run:Clean;fmxPing:Clean;popupmenu:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="fmPing:Make;CustomTree:Make;CiaXmlXE6Design:Make;CiaXmlXE6Run:Make;fmxPing:Make;popupmenu:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<PING host="192.168.0.4" Interval="5" TimeoutTime="3000" PacketSize="996" PingCriteria="1" PingLostSerialNum="10" hosts="# Line start with # is common
+192.168.70.1" Periodically="0" PingNumber="5" Delay="2000" TTL="255"/>
+	<LOG enableLog="1" LogfileName="test.log" enableSubffix="1" SubffixString="YYYY-MM-DD_hhmmss"/>
+	<Chart EnableChart="0"/>
+	<REPORT RunAsServer="1" ReportInterval="300" ServerIP="127.0.0.1" ReportToServer="1"/>
+</Configuration>

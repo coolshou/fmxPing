@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/07/08 13:01:40.000.990,=C:\Users\10007014\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/16 11:49:41.000.876,=C:\Users\10007014\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/16 11:51:00.000.290,D:\work\fmPing\Unit1.fmx=C:\Users\10007014\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/07/16 11:51:00.000.290,D:\work\fmPing\Unit1.pas=C:\Users\10007014\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/16 11:51:12.000.463,D:\work\fmPing\fmxPing.dproj=C:\Users\10007014\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/07/16 14:11:30.000.089,D:\work\fmPing\Unit1.fmx=D:\work\fmPing\UntMain.fmx</Transaction>
+    <Transaction>2014/07/16 14:11:30.000.089,D:\work\fmPing\Unit1.pas=D:\work\fmPing\UntMain.pas</Transaction>
+    <Transaction>2014/07/16 14:37:24.000.083,=D:\work\fmPing\lib\DelphiVault.Indy10.PingClient.pas</Transaction>
+    <Transaction>2014/07/16 14:37:50.000.445,=D:\work\fmPing\lib\TreeViewPingItem.pas</Transaction>
+    <Transaction>2014/07/16 14:37:50.000.510,=D:\work\fmPing\lib\uDialogs.pas</Transaction>
+    <Transaction>2014/07/16 16:06:04.000.249,=D:\work\fmPing\UnitFuncs.pas</Transaction>
+    <Transaction>2014/07/16 16:49:28.000.887,=D:\work\fmPing\Unit2.pas</Transaction>
+    <Transaction>2014/07/16 16:49:46.000.834,D:\work\fmPing\Unit2.pas=D:\work\fmPing\UntConst.pas</Transaction>
+    <Transaction>2014/07/28 19:57:02.000.837,=D:\work\fmPing\lib\PJSysInfo.pas</Transaction>
+    <Transaction>2014/07/28 19:58:49.000.039,=D:\work\fmPing\Unit2.pas</Transaction>
+    <Transaction>2014/07/28 19:59:09.000.428,D:\work\fmPing\Unit2.fmx=D:\work\fmPing\UntOption.fmx</Transaction>
+    <Transaction>2014/07/28 19:59:09.000.428,D:\work\fmPing\Unit2.pas=D:\work\fmPing\UntOption.pas</Transaction>
+    <Transaction>2014/07/31 13:19:17.000.874,=D:\work\fmPing\Unit2.pas</Transaction>
+    <Transaction>2014/07/31 13:25:40.000.934,D:\work\fmPing\Unit2.pas=D:\work\fmPing\UnitOption.pas</Transaction>
+    <Transaction>2014/07/31 13:25:40.000.954,D:\work\fmPing\Unit2.fmx=D:\work\fmPing\UnitOption.fmx</Transaction>
+    <Transaction>2014/08/06 16:15:52.927,D:\work\fmPing\UntOption.pas=</Transaction>
+    <Transaction>2014/08/06 17:45:03.973,D:\work\fmPing\UnitCriteria.pas=D:\work\fmPing\UnitOption.pas</Transaction>
+    <Transaction>2014/08/06 17:45:04.009,D:\work\fmPing\UnitCriteria.fmx=D:\work\fmPing\UnitOption.fmx</Transaction>
+    <Transaction>2014/08/06 17:45:51.378,=D:\work\fmPing\UnitOption.pas</Transaction>
+  </Transactions>
+</BorlandProject>

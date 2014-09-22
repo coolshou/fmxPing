@@ -1,0 +1,35 @@
+ISC ping component issue?
+1. ping package size max limit to 996? why? (indy limit?)
+2. sometimes ping not exist IPv4 address may return successful but receive 0 byte (should be an error, indy issue?)
+
+3. Stop/start Do we need to clear ping count?? or use a reset command to reset all count?
+
+4. add support ping multi hosts
+5. ping report for each host (Green O, Red X easy to distuction UI)
+
+## report format
+1. Host name(& OS version)
+2. Wireless card name(& driver version)
+3. Target IP
+4. continuous ping lost(record)
+5. Ping count
+6. Ping Fail count
+7. Ping Fail Rate (calc by 5 and 6)
+8. ttl min
+9. ttl max
+10. ttl avg (calc by 8 and 9)
+11. ping Start time
+12. Last ping ok time
+13. Ping ok duration (calc by 11 and 12)
+. remark
+
+6. Server control all client to do the ping.
+	1. client reg to server
+	2. server use client list and config client's setting for ping
+	3. server ask client start ping
+	4. client report ping result in report format
+	
+	
+XP indy buffer?
+ping 996 => XP buffer too small??	
+XP x64 indy buffer?

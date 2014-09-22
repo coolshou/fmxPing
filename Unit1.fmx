@@ -1,0 +1,47 @@
+object fmxForm: TfmxForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 3
+    Width = 384.000000000000000000
+    object sbMenu: TSpeedButton
+      Height = 48.000000000000000000
+      Text = 'Menu'
+      Width = 73.000000000000000000
+      OnClick = sbMenuClick
+    end
+  end
+  object rcPopup: TRectangle
+    Align = Top
+    Height = 73.000000000000000000
+    Position.Y = 48.000000000000000000
+    Visible = False
+    Width = 384.000000000000000000
+  end
+  object PopupAnimation: TFloatAnimation
+    Duration = 0.200000002980232200
+    StartValue = 0.000000000000000000
+    StopValue = 0.000000000000000000
+  end
+  object XMLConfig1: TXMLConfig
+    ParseOptions = [poPreserveWhiteSpace]
+    Backup = True
+    Left = 328
+    Top = 208
+    DOMVendorDesc = 'ADOM XML v4'
+  end
+end

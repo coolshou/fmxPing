@@ -1,0 +1,115 @@
+object FrameCriteria: TFrameCriteria
+  Align = Contents
+  Height = 290.000000000000000000
+  Width = 372.000000000000000000
+  TabOrder = 0
+  object BackGroundRect: TRectangle
+    Align = Contents
+    Fill.Color = claMidnightblue
+    Height = 290.000000000000000000
+    Opacity = 0.800000011920929000
+    Sides = []
+    Width = 372.000000000000000000
+    OnClick = BackGroundRectClick
+    object rcOption: TRectangle
+      Align = Center
+      Height = 133.000000000000000000
+      Width = 328.000000000000000000
+      object rcOptionLabel: TRectangle
+        Align = Left
+        Fill.Kind = None
+        Height = 83.000000000000000000
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Stroke.Kind = None
+        Width = 177.000000000000000000
+        object lbPingLostNumumber: TLabel
+          Align = Top
+          StyledSettings = [Family, Style, FontColor]
+          Height = 32.000000000000000000
+          Position.X = 4.000000000000000000
+          Position.Y = 36.000000000000000000
+          TextSettings.HorzAlign = Trailing
+          Text = 'Continious Ping Lost Number:'
+          Width = 169.000000000000000000
+        end
+        object lbCriteria: TLabel
+          Align = Top
+          StyledSettings = [Family, Style, FontColor]
+          Height = 32.000000000000000000
+          Position.X = 4.000000000000000000
+          Position.Y = 4.000000000000000000
+          TextSettings.HorzAlign = Trailing
+          Text = 'Ping Lost Criteria(%):'
+          Width = 169.000000000000000000
+        end
+      end
+      object rcOptionValue: TRectangle
+        Align = Client
+        Fill.Kind = None
+        Height = 83.000000000000000000
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Stroke.Kind = None
+        Width = 151.000000000000000000
+        object spPingLostNumumber: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Cursor = crIBeam
+          Min = 1.000000000000000000
+          Value = 10.000000000000000000
+          Increment = 500.000000000000000000
+          Position.X = 4.000000000000000000
+          Position.Y = 36.000000000000000000
+          Width = 143.000000000000000000
+          Height = 32.000000000000000000
+        end
+        object spCriteria: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Cursor = crIBeam
+          Max = 100000.000000000000000000
+          Value = 5.000000000000000000
+          Position.X = 4.000000000000000000
+          Position.Y = 4.000000000000000000
+          Width = 143.000000000000000000
+          Height = 32.000000000000000000
+        end
+      end
+      object rcButton: TRectangle
+        Align = Bottom
+        Height = 50.000000000000000000
+        Padding.Left = 20.000000000000000000
+        Padding.Right = 20.000000000000000000
+        Position.Y = 83.000000000000000000
+        Width = 328.000000000000000000
+        object btnCancel: TButton
+          Align = Left
+          Height = 50.000000000000000000
+          ModalResult = 2
+          Position.X = 20.000000000000000000
+          TabOrder = 0
+          Text = 'Cancel'
+          Width = 82.954544067382810000
+          OnClick = btnCancelClick
+        end
+        object btnOK: TButton
+          Align = Right
+          Height = 50.000000000000000000
+          ModalResult = 1
+          Position.X = 225.045471191406300000
+          TabOrder = 1
+          Text = 'OK'
+          Width = 82.954528808593750000
+          OnClick = btnOKClick
+        end
+      end
+    end
+  end
+end
